@@ -17,446 +17,490 @@
       property="og:description"
       content="Delicious meals delivered to your door. Order now!"
     />
-    <meta property="og:image" content="../asset/logo.webp" />
+    <meta property="og:image" content="/assets/logo.webp" />
     <meta property="og:url" content="https://foodz.com" />
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://foodz.com/" />
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 
     <link href="/styles.css" rel="stylesheet" />
   </head>
+
   <body>
-    <nav class="navbar">
-      <div id="logo">
-        <img src="../assets/logo.webp" alt="Foodz logo" />
-      </div>
-      <div class="nav-lists-container" id="navMenu">
-        <div class="nav-list">Home</div>
-        <div class="nav-list">Menu</div>
-        <div class="nav-list">Blog</div>
-        <div class="nav-list">Contact</div>
-        <div id="order-btn">ORDER NOW</div>
-      </div>
-      <div
-        class="hamburger-logo"
-        id="hamburger"
-        aria-label="Open navigation menu"
-      ></div>
-    </nav>
-    <div class="hero-main-wrapper">
-      <div class="hero-section">
-        <div class="hero-content">
-          <h1 class="hero-heading">
-            You've Got Questions. <br />We've Got Taste.
-          </h1>
-          <p class="hero-sub-heading">
-            Explore your Taste with speacial food in the special place. This
-            text don’t have any meaning
-          </p>
-          <div id="hero-btn-container">
-            <button id="hero-order-btn" class="btn">ORDER NOW</button>
-            <button id="hero-explore" class="btn">Explore menu</button>
-          </div>
-          <div class="hero-exp-container">
-            <div class="exp-content">
-              <div class="exp-heading">9+</div>
-              <div class="exp-sub-heading">years of service.</div>
-            </div>
-            <div class="exp-divider"></div>
-            <div class="exp-content">
-              <div class="exp-heading">120+</div>
-              <div class="exp-sub-heading">Store in the world.</div>
-            </div>
-          </div>
+    <header>
+      <nav class="navbar">
+        <div id="logo">
+          <img src="../assets/logo.webp" alt="Foodz logo" />
         </div>
-      </div>
-      <div class="hero-section-bg">
-        <div>
-          <img
-            src="assets/home-bg.webp"
-            class="hero-bg-main"
-            alt="Fresh food delivery banner with dishes"
-          />
-          <img
-            src="assets/home-bg-res.webp"
-            class="hero-bg-res"
-            alt="Mobile food delivery banner"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="container product-section">
-      <div class="product-main-heading">
-        <h2 class="product-heading">
-          Today <span class="highlight">special</span> offers
-        </h2>
-        <p class="product-sub-heading">
-          Best cooks and best delivery guys all at your service. Hot tasty food
-          will reach you in 60 minutes.
-        </p>
-      </div>
-      <div class="product-main-container">
-        <div class="product-wrapper">
-          <div class="product-container">
-            <div class="product-card product-1">
-              <div class="product-single">
-                <div class="product-img-container">
-                  <img src="/assets/product.webp" loading="lazy" alt="Gimbap" />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">Gimbap</div>
-                  <div class="product-review-container">
-                    <div class="product-star">
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                    </div>
-                    <p class="product-review">214 Reviews</p>
-                  </div>
 
-                  <div class="product-more-info">
-                    <h3 class="product-price">$12.99</h3>
-                    <button class="product-order-btn">Order Now</button>
+        <ul class="nav-lists-container" id="navMenu">
+          <li class="nav-list"><a href="#">Home</a></li>
+          <li class="nav-list"><a href="#">Menu</a></li>
+          <li class="nav-list"><a href="#">Blog</a></li>
+          <li class="nav-list"><a href="#">Contact</a></li>
+          <li class="nav-list">
+            <a href="#order-form" id="order-btn">ORDER NOW</a>
+          </li>
+        </ul>
+
+        <div
+          class="hamburger-logo"
+          id="hamburger"
+          aria-label="Open navigation menu"
+          role="button"
+        ></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-main-wrapper">
+        <div class="hero-section">
+          <div class="hero-content">
+            <h2 class="hero-heading">
+              You've Got Questions. <br />We've Got Taste.
+            </h2>
+            <p class="hero-sub-heading">
+              Explore your Taste with special food in the special place. This
+              text don’t have any meaning
+            </p>
+            <div id="hero-btn-container">
+              <button id="hero-order-btn" class="btn">ORDER NOW</button>
+              <button id="hero-explore" class="btn">Explore menu</button>
+            </div>
+            <div class="hero-exp-container">
+              <div class="exp-content">
+                <div class="exp-heading">9+</div>
+                <div class="exp-sub-heading">years of service.</div>
+              </div>
+              <div class="exp-divider"></div>
+              <div class="exp-content">
+                <div class="exp-heading">120+</div>
+                <div class="exp-sub-heading">Store in the world.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-section-bg">
+          <div>
+            <img
+              src="assets/home-bg.webp"
+              class="hero-bg-main"
+              alt="Fresh food delivery banner with dishes"
+            />
+            <img
+              src="assets/home-bg-res.webp"
+              class="hero-bg-res"
+              alt="Mobile food delivery banner"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container product-section">
+        <div class="product-main-heading">
+          <h2 class="product-heading">
+            Today <span class="highlight">special</span> offers
+          </h2>
+          <p class="product-sub-heading">
+            Best cooks and best delivery guys all at your service. Hot tasty
+            food will reach you in 60 minutes.
+          </p>
+        </div>
+        <div class="product-main-container">
+          <div class="product-wrapper">
+            <div class="product-container">
+              <div class="product-card product-1">
+                <div class="product-single">
+                  <div class="product-img-container">
+                    <img
+                      src="/assets/product.webp"
+                      loading="lazy"
+                      alt="Gimbap"
+                    />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">Gimbap</div>
+                    <div class="product-review-container">
+                      <div class="product-star">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p class="product-review">214 Reviews</p>
+                    </div>
+
+                    <div class="product-more-info">
+                      <h3 class="product-price">$12.99</h3>
+                      <button class="product-order-btn">Order Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="product-card product-2">
-              <div class="product-single">
-                <div class="product-img-container">
-                  <img
-                    src="/assets/product-2.webp"
-                    loading="lazy"
-                    alt="Korea BBQ"
-                  />
+              <div class="product-card product-2">
+                <div class="product-single">
+                  <div class="product-img-container">
+                    <img
+                      src="/assets/product-2.webp"
+                      loading="lazy"
+                      alt="Korea BBQ"
+                    />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name-container">
+                      <div class="product-name">Korea BBQ</div>
+                      <div class="product-timer-container">
+                        <span class="timer-logo"></span
+                        ><span class="timer">02:21:11</span>
+                      </div>
+                    </div>
+                    <div class="product-review-container">
+                      <div class="product-star">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p class="product-review">214 Reviews</p>
+                    </div>
+                    <div class="product-details">
+                      <p>Excellent flavor for your preference with :</p>
+                      <ul class="product-features">
+                        <li>
+                          <p>Aromatic</p>
+                        </li>
+                        <li>
+                          <p>Spicy</p>
+                        </li>
+                        <li>
+                          <p>Honeyed sugary</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-more-info">
+                      <h3 class="product-price">$12.99</h3>
+                      <button class="product-order-btn">Order Now</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="product-content">
-                  <div class="product-name-container">
+              </div>
+              <div class="product-card product-3">
+                <div class="product-single">
+                  <div class="product-img-container">
+                    <img
+                      src="/assets/product-3.webp"
+                      loading="lazy"
+                      alt="Kimchi"
+                    />
+                  </div>
+                  <div class="product-content">
+                    <div class="product-name">Kimchi</div>
+                    <div class="product-review-container">
+                      <div class="product-star">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p class="product-review">214 Reviews</p>
+                    </div>
+
+                    <div class="product-more-info">
+                      <h3 class="product-price">$12.99</h3>
+                      <button class="product-order-btn">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card product-4">
+                <div class="product-single">
+                  <div class="product-img-container">
+                    <img
+                      src="/assets/product-3.webp"
+                      loading="lazy"
+                      alt="Korea BBQ"
+                    />
+                  </div>
+                  <div class="product-content">
                     <div class="product-name">Korea BBQ</div>
-                    <div class="product-timer-container">
-                      <span class="timer-logo"></span
-                      ><span class="timer">02:21:11</span>
+                    <div class="product-review-container">
+                      <div class="product-star">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                      <p class="product-review">214 Reviews</p>
                     </div>
-                  </div>
-                  <div class="product-review-container">
-                    <div class="product-star">
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                    </div>
-                    <p class="product-review">214 Reviews</p>
-                  </div>
-                  <div class="product-details">
-                    <p>Excellent flavor for your preference with :</p>
-                    <ul class="product-features">
-                      <li><p>Aromatic</p></li>
-                      <li><p>Spicy</p></li>
-                      <li><p>Honeyed sugary</p></li>
-                    </ul>
-                  </div>
-                  <div class="product-more-info">
-                    <h3 class="product-price">$12.99</h3>
-                    <button class="product-order-btn">Order Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-card product-3">
-              <div class="product-single">
-                <div class="product-img-container">
-                  <img
-                    src="/assets/product-3.webp"
-                    loading="lazy"
-                    alt="Kimchi"
-                  />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">Kimchi</div>
-                  <div class="product-review-container">
-                    <div class="product-star">
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                    </div>
-                    <p class="product-review">214 Reviews</p>
-                  </div>
 
-                  <div class="product-more-info">
-                    <h3 class="product-price">$12.99</h3>
-                    <button class="product-order-btn">Order Now</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-card product-4">
-              <div class="product-single">
-                <div class="product-img-container">
-                  <img
-                    src="/assets/product-3.webp"
-                    loading="lazy"
-                    alt="Korea BBQ"
-                  />
-                </div>
-                <div class="product-content">
-                  <div class="product-name">Korea BBQ</div>
-                  <div class="product-review-container">
-                    <div class="product-star">
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
-                      <div class="star"></div>
+                    <div class="product-more-info">
+                      <h3 class="product-price">$12.99</h3>
+                      <button class="product-order-btn">Order Now</button>
                     </div>
-                    <p class="product-review">214 Reviews</p>
-                  </div>
-
-                  <div class="product-more-info">
-                    <h3 class="product-price">$12.99</h3>
-                    <button class="product-order-btn">Order Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="slider-controls">
+            <span class="prev-arrow"
+              ><svg
+                width="14"
+                height="9"
+                viewBox="0 0 14 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.90906 0.265207C4.50324 -0.109399 3.87058 -0.0840962 3.49597 0.321722L0.265201 3.82168C-0.0883963 4.20474 -0.0884 4.79518 0.265194 5.17824L3.49597 8.67828C3.87057 9.08411 4.50323 9.10941 4.90905 8.73481C5.31487 8.36021 5.34018 7.72755 4.96558 7.32173L3.28397 5.49997L13 5.49997C13.5523 5.49997 14 5.05225 14 4.49997C14 3.94768 13.5523 3.49997 13 3.49997L3.284 3.49997L4.96557 1.67829C5.34018 1.27247 5.31487 0.639813 4.90906 0.265207Z"
+                  fill="#777E91"
+                />
+              </svg>
+            </span>
+            <span class="next-arrow">
+              <svg
+                width="14"
+                height="9"
+                viewBox="0 0 14 9"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z"
+                  fill="#777E91"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
-        <div class="slider-controls">
-          <span class="prev-arrow"
-            ><svg
-              width="14"
-              height="9"
-              viewBox="0 0 14 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4.90906 0.265207C4.50324 -0.109399 3.87058 -0.0840962 3.49597 0.321722L0.265201 3.82168C-0.0883963 4.20474 -0.0884 4.79518 0.265194 5.17824L3.49597 8.67828C3.87057 9.08411 4.50323 9.10941 4.90905 8.73481C5.31487 8.36021 5.34018 7.72755 4.96558 7.32173L3.28397 5.49997L13 5.49997C13.5523 5.49997 14 5.05225 14 4.49997C14 3.94768 13.5523 3.49997 13 3.49997L3.284 3.49997L4.96557 1.67829C5.34018 1.27247 5.31487 0.639813 4.90906 0.265207Z"
-                fill="#777E91"
-              />
-            </svg>
-          </span>
-          <span class="next-arrow">
-            <svg
-              width="14"
-              height="9"
-              viewBox="0 0 14 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z"
-                fill="#777E91"
-              />
-            </svg>
-          </span>
+      </section>
+      <section>
+        <h2 class="sub-heading">
+          19 <span class="highlight"> Michelin</span> Stars Chef
+        </h2>
+        <div class="chef-container container">
+          <div class="chef-image-container">
+            <img
+              src="/assets/chef.webp"
+              class="chef"
+              loading="lazy"
+              alt="chef"
+            />
+          </div>
+          <div class="chef-content">
+            <div class="chef-special-container">
+              <p class="highlight">Alain Ducasse - 19 Michelin Stars</p>
+              <p class="highlight" id="larger-viewRes">
+                View All Restaurant <span class="arrow-logo"></span>
+              </p>
+            </div>
+            <div class="chef-details">
+              Considered by many to be one of the best chefs in the world, he’s
+              built a business empire over the years with 36 restaurants
+              spanning across the globe. He’s also one of only two chefs to hold
+              21 Michelin stars throughout his career and the first chef to own
+              restaurants carrying three Michelin Stars in three cities. In
+              addition to being known for world-class French cuisine, Ducasse is
+              the only chef on this list who has sent his food into space. In
+              2015, Ducasse sent meals to astronauts orbiting Earth aboard the
+              International Space Station, an accomplishment that Ducasse said
+              he viewed as conquering ‘ the final frontier (of cooking)’.
+            </div>
+            <p class="highlight" id="smaller-viewRes">
+              View All Restaurant <span class="arrow-logo"></span>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2 class="sub-heading">
-        19 <span class="highlight"> Michelin</span> Stars Chef
-      </h2>
-    </div>
-    <div class="chef-container container">
-      <div class="chef-image-container">
-        <img src="/assets/chef.webp" class="chef" loading="lazy" alt="chef" />
-      </div>
-      <div class="chef-content">
-        <div class="chef-special-container">
-          <p class="highlight">Alain Ducasse - 19 Michelin Stars</p>
-          <p class="highlight" id="larger-viewRes">
-            View All Restaurant <span class="arrow-logo"></span>
+      </section>
+      
+      <section class="step-container container">
+        <div class="step-single-heading">
+          <h2 class="step-heading">
+            How we keep your meal <span class="highlight">Delicious</span>
+          </h2>
+        </div>
+        <div class="step-content">
+          <div class="step-single">
+            <div class="step-single-img">
+              <img src="/assets/step-1.webp" loading="lazy" alt="step-1" />
+            </div>
+            <div class="step-single-content">
+              <p class="step-single-heading">Receive The Order</p>
+              <p>
+                That help us know what delicious meal you will try, but I don’t
+                write anything
+              </p>
+            </div>
+          </div>
+          <div class="step-single step-highlight">
+            <div class="step-single-img">
+              <img src="/assets/step-2.webp" loading="lazy" alt="step-2" />
+            </div>
+
+            <div class="step-single-content">
+              <p class="step-single-heading">Prepare your Meal</p>
+              <p>
+                That help us know what delicious meal you will try, but I don’t
+                write anything
+              </p>
+            </div>
+          </div>
+          <div class="step-single">
+            <div class="step-single-img">
+              <img src="/assets/step-3.webp" loading="lazy" alt="step-2" />
+            </div>
+            <div class="step-single-content">
+              <p class="step-single-heading">Delivery Your Meal</p>
+              <p>
+                That help us know what delicious meal you will try, but I don’t
+                write anything
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-container container" id="order-form">
+        <div class="cta-main-heading">
+          <h3 class="cta-heading">
+            Get the best Taste <span class="highlight">Now!</span>
+          </h3>
+          <p class="cta-sub-heading">
+            Best cooks and best delivery guys all at your service. Hot tasty
+            food will reach you in 60 minutes.
           </p>
         </div>
-        <div class="chef-details">
-          Considered by many to be one of the best chefs in the world, he’s
-          built a business empire over the years with 36 restaurants spanning
-          across the globe. He’s also one of only two chefs to hold 21 Michelin
-          stars throughout his career and the first chef to own restaurants
-          carrying three Michelin Stars in three cities. In addition to being
-          known for world-class French cuisine, Ducasse is the only chef on this
-          list who has sent his food into space. In 2015, Ducasse sent meals to
-          astronauts orbiting Earth aboard the International Space Station, an
-          accomplishment that Ducasse said he viewed as conquering ‘ the final
-          frontier (of cooking)’.
-        </div>
-        <p class="highlight" id="smaller-viewRes">
-          View All Restaurant <span class="arrow-logo"></span>
-        </p>
-      </div>
-    </div>
-
-    <!-- step -->
-    <div class="step-container container">
-      <div class="step-single-heading">
-        <h2 class="step-heading">
-          How we keep your meal <span class="highlight">Delicious</span>
-        </h2>
-      </div>
-      <div class="step-content">
-        <div class="step-single">
-          <div class="step-single-img">
-            <img src="/assets/step-1.webp" loading="lazy" alt="step-1" />
-          </div>
-          <div class="step-single-content">
-            <p class="step-single-heading">Receive The Order</p>
-            <p>
-              That help us know what delicious meal you will try, but I don’t
-              write anything
-            </p>
-          </div>
-        </div>
-        <div class="step-single step-highlight">
-          <div class="step-single-img">
-            <img src="/assets/step-2.webp" loading="lazy" alt="step-2" />
-          </div>
-
-          <div class="step-single-content">
-            <p class="step-single-heading">Prepair your Meal</p>
-            <p>
-              That help us know what delicious meal you will try, but I don’t
-              write anything
-            </p>
-          </div>
-        </div>
-        <div class="step-single">
-          <div class="step-single-img">
-            <img src="/assets/step-3.webp" loading="lazy" alt="step-2" />
-          </div>
-          <div class="step-single-content">
-            <p class="step-single-heading">Delivery Your Meal</p>
-            <p>
-              That help us know what delicious meal you will try, but I don’t
-              write anything
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-container container">
-      <div class="cta-main-heading">
-        <h3 class="cta-heading">
-          Get the best Taste <span class="highlight">Now!</span>
-        </h3>
-        <p class="cta-sub-heading">
-          Best cooks and best delivery guys all at your service. Hot tasty food
-          will reach you in 60 minutes.
-        </p>
-      </div>
-      <div class="cta-form-container">
-        <div>
-          <div class="cta-header">
-            <p class="cta-content-heading">What's your Taste?</p>
-            <p>Fill out the form and let us know your taste.</p>
-          </div>
-
-          <div class="meal-section">
-            <h3>Select your Meal</h3>
-            <a href="#" class="view-menu">View menu</a>
-          </div>
-
-          <form id="order-form">
-            <div class="form-group">
-              <div class="select-wrapper">
-                <select id="taste" name="taste" required>
-                  <option value="">What's your Taste?</option>
-                  <option value="spicy">Spicy</option>
-                  <option value="mild">Mild</option>
-                  <option value="sweet">Sweet</option>
-                  <option value="savory">Savory</option>
-                </select>
-              </div>
+        <div class="cta-form-container">
+          <div>
+            <div class="cta-header">
+              <p class="cta-content-heading">What's your Taste?</p>
+              <p>Fill out the form and let us know your taste.</p>
             </div>
 
-            <a href="#" class="add-taste">Add 1 Taste <span>+</span></a>
+            <div class="meal-section">
+              <h3>Select your Meal</h3>
+              <a href="#" class="view-menu">View menu</a>
+            </div>
 
-            <div class="form-row">
+            <form id="order-form">
               <div class="form-group">
-                <label for="order-name">Order name</label>
-                <input id="order-name" name="name" type="text" placeholder="Your name" required/>
+                <div class="select-wrapper">
+                  <select id="taste" name="taste" required>
+                    <option value="">What's your Taste?</option>
+                    <option value="spicy">Spicy</option>
+                    <option value="mild">Mild</option>
+                    <option value="sweet">Sweet</option>
+                    <option value="savory">Savory</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group">
-                <label>Phone number</label>
-                <div class="phone-wrapper">
-                  <div class="country-code-wrapper">
-                    <select class="country-code" name="country-code" aria-label="Country code" required>
-                      <option value="VN">VN</option>
-                      <option value="US">US</option>
-                      <option value="UK">UK</option>
-                      <option value="IN">IN</option>
-                    </select>
-                  </div>
+
+              <a href="#" class="add-taste">Add 1 Taste <span>+</span></a>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="order-name">Order name</label>
                   <input
+                    id="order-name"
+                    name="name"
                     type="text"
-                    class="phone-input"
-                    placeholder="(+84) 123 465 798"
+                    placeholder="Your name"
                     required
                   />
                 </div>
+                <div class="form-group">
+                  <label>Phone number</label>
+                  <div class="phone-wrapper">
+                    <div class="country-code-wrapper">
+                      <select
+                        class="country-code"
+                        name="country-code"
+                        aria-label="Country code"
+                        required
+                      >
+                        <option value="VN">VN</option>
+                        <option value="US">US</option>
+                        <option value="UK">UK</option>
+                        <option value="IN">IN</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      class="phone-input"
+                      placeholder="(+84) 123 465 798"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="address">Your Address</label>
-              <div class="address-wrapper">
-                <input
-                id="address" name="address" 
-                  type="text"
-                  class="address-input"
-                  placeholder="17 Acb Street"
+              <div class="form-group">
+                <label for="address">Your Address</label>
+                <div class="address-wrapper">
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    class="address-input"
+                    placeholder="17 Acb Street"
+                    required
+                  />
+                  <svg
+                    class="location-icon"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <div class="select-wrapper">
+                  <select id="payment" name="payment" required>
+                    <option value="">I'll pay cash</option>
+                    <option value="card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="note">Note for us</label>
+                <textarea
+                  id="note"
+                  name="note"
+                  placeholder="More spicy, more sauce, ..."
                   required
-                />
-                <svg
-                  class="location-icon"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                ></textarea>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="payment">Payment Method</label>
-              <div class="select-wrapper">
-                <select id="payment" name="payment" required>
-                  <option value="">I'll pay cash</option>
-                  <option value="card">Credit Card</option>
-                  <option value="paypal">PayPal</option>
-                  <option value="bank">Bank Transfer</option>
-                </select>
+              <div class="total">
+                You will pay <span class="total-amount">$0.00</span>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label for="note">Note for us</label>
-              <textarea id="note" name="note" placeholder="More spicy, more sauce, ..." required></textarea>
-            </div>
-
-            <div class="total">
-              You will pay <span class="total-amount">$0.00</span>
-            </div>
-
-            <button type="submit" class="order-btn">Order Now</button>
-          </form>
+              <button type="submit" class="order-btn">Order Now</button>
+            </form>
+          </div>
+          <div class="form-img-container">
+            <img src="assets/delivery.webp" loading="lazy" alt="delivery" />
+          </div>
         </div>
-        <div class="form-img-container">
-          <img src="assets/delivery.webp" loading="lazy" alt="delivery" />
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <footer class="footer container">
       <div class="footer-container">
@@ -478,10 +522,18 @@
             support <span class="footer-arrow"></span>
           </p>
           <ul class="footer-links">
-            <li><p>Help Centre</p></li>
-            <li><p>Safety information</p></li>
-            <li><p>Cancellation options</p></li>
-            <li><p>Report Complaint</p></li>
+            <li>
+              <a href="#">Help Centre</a>
+            </li>
+            <li>
+              <a href="#">Safety information</a>
+            </li>
+            <li>
+              <a href="#">Cancellation options</a>
+            </li>
+            <li>
+              <a href="#">Report Complaint</a>
+            </li>
           </ul>
         </div>
         <div class="single-footer-content">
@@ -489,22 +541,34 @@
             Community <span class="footer-arrow"></span>
           </p>
           <ul class="footer-links">
-            <li><p>Customer Review</p></li>
-            <li><p>Newsletter</p></li>
+            <li>
+              <a href="#">Customer Review</a>
+            </li>
+            <li>
+              <a href="#">Newsletter</a>
+            </li>
           </ul>
         </div>
         <div class="single-footer-content">
           <p class="footer-heading">About <span class="footer-arrow"></span></p>
           <ul class="footer-links">
-            <li><p>Our Chef</p></li>
-            <li><p>Careers</p></li>
-            <li><p>Blog</p></li>
-            <li><p>Content</p></li>
+            <li>
+              <a href="#">Our Chef</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
