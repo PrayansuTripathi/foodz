@@ -28,7 +28,7 @@ function toggleFooterLink(header) {
 }
 
 function handleFooterAccordion() {
-  if (window.innerWidth < 787) {
+  if (window.innerWidth < 768) {
     footerLinks.forEach((link) => (link.style.display = "none"));
     footerHeadings.forEach((header) => {
       header.addEventListener("click", () => toggleFooterLink(header));
